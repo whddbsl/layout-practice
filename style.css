@@ -1,0 +1,108 @@
+@import url(base.css);
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+body{
+    width: 1920px;
+    height: 1061px;
+    background: linear-gradient(180deg, #E0E0E0 0%, #FFFFFF 73.96%);
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    width: 940px;
+    height: 138px;
+    margin-left: 490px;
+    margin-right: 490px;
+    background: white;
+    padding: 40px 28px 45px;
+    justify-content: flex-end;
+    border-radius: 0 0 15px 15px;
+}
+
+.logo__item{
+    padding: 9px 20px;
+}
+
+.logo{
+    width: 165px;
+    height: 35px;
+}
+
+.menu{
+    display: flex;
+    background: linear-gradient(180deg, #EDAD2D 0%, #D16527 30.73%, #D16527 64.58%, #EDAD2D 100%);
+    height: 53px;
+    padding: 0;
+    border-top: 2px solid black;
+}
+
+.menu__list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu__item{
+    height: 53px;
+    padding: 17px 20px;
+    font-size: 16px;
+    line-height: 19.09px;
+    border-left: 2px solid white;
+}
+
+/* .item__link:nth-child(1){
+    width: 138px;
+} */
+
+.menu__item:nth-child(1){
+    width: 138px;
+}
+
+.menu__item:nth-child(2) {
+    width: 125px;
+}
+
+.menu__item:nth-child(3) {
+    width: 90px;
+}
+
+.menu__item:nth-child(4) {
+    width: 107px;
+}
+
+.menu__item:nth-child(5) {
+    width: 121px;
+}
+
+.menu__item:nth-child(6) {
+    width: 90px;
+}
+
+.link{
+    /* background-color: green; */
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.link a{
+    /* padding: 8px; */
+}
+
+.link a:nth-child(n+1):nth-child(-n+4)::after{
+    content: ":";
+    margin-left: 8px;
+    margin-right: 8px;
+}
